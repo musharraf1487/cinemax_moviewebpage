@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,200;1,300&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;}
+#home{
+        padding-top: 100px;
+    }
+
+
+/*varriables*/
+:root{
+    --main-color: #ff2c1f;
+    --text-color:#020307;
+    --bg-color: #fff;
+}
+body{
+    background: var(--text-color);
+    color: var(--bg-color);
+}
+header{
+    position:fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 100px;
+    transition: 0.5s;
+}
+   /* background: var(--main-color);*/
+   .logo{
+    font-size: 1.1rem;
+    font-weight: 600;
+    align-items: center;
+    color: var(--bg-color);
+    display: flex;
+    column-gap: 0.5rem;
+   }
+   .bx{
+    color: var(--main-color);
+   }
+.navbar{
+    display: flex;
+    column-gap: 5rem;
+    
+}
+.navbar li{
+    position: relative;
+    
+}
+.navbar a{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--bg-color);
+}
+.navbar a::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: -4px;
+    left: 0px;
+    transition: 0.4s all linear;
+}
+.navbar a:hover::after,
+.navbar .home-active::after{
+    width: 100%;
+}
+#home-active{
+    font-size: 2%;
+    /* cursor: pointer;
+    z-index: 1000001; */
+    display: none;
+}
+img
+{width: 80%;
+height: 450px;
+margin-left: 10%;
+padding-bottom: 2%;
+
+background-size: cover;}
+   .pehly{
+margin-top: 0px;
+   }
+.dusra, .tesra, .chotha, .panj{
+    margin-top: 10%;
+}
+.panj{
+    padding-bottom: 3%;
+}
+.btn{
+    background-color: #ff2c1f;
+    border-radius: 3px;
+padding-top: 30;
+margin-top: 300;
+display: inline-block;
+padding: 2px;
+margin-left: 150px;
+color: black;
+}
+h1{display: inline;
+font-size: x-large;
+font-weight: 600;
+margin-top: 15px;
+margin-bottom: 60px;
+margin-left: 150px;
+
+}
+
+
+
+.play{font-size: x-large;
+    padding-top: 5px;
+    padding-left: 1%;
+    position: absolute;
+
+
+
+}
+footer{
+    padding: 10%;
+    
+}
+footer h3{
+    margin-left: 35%;
+    margin-top: 2%;
+
+}
+#loc{
+    margin-left: 30px;
+}
+#rasta{
+    margin-left: 70%;
+    margin-top: 1px;
+}
